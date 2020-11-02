@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.slider {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+}
+
+.slider__image {
+  margin: 0 auto 20px;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+}
+
+.slider__dots-list {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dots-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.slider__dots-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider__dots-item--active {
+  width: 40px;
+  height: 40px;
+}
+
+.slider__controls-back, .slider__controls-forward {
+  width: 225px;
+  height: 225px;
+  background-image: url(img/arrow.jpg);
+  background-size: contain;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider__controls-back {
+  top: 100px;
+  left: 50px;
+  transform: rotate(180deg);
+}
+
+.slider__controls-forward {
+  top: 100px;
+  right: 50px;
+  transform: rotate(0deg);
+}
